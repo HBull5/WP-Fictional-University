@@ -1,4 +1,4 @@
-# WP-Fictional-University
+# Learning Wordpress Project
 
 ## Creating files in the public folder
 
@@ -36,7 +36,7 @@
 * `page.php` is designated in WP as the script to execute when a page is the permalink.
 * **THE LOOP** is the wordpress loop and is basically just a paradigm.
 
-## Header & Footer
+## Header, Footer, & Linking Things
 
 * `get_header()` is a WP function that looks for a file named `header.php` in the themes folder and will include the contents of that file on the page.
 * `get_footer()` is a WP function that looks for a file named `footer.php` in the themes folder and will include the contents of that file on the page.
@@ -46,6 +46,8 @@
 * `functions.php` is **NOT** a template file like `page.php` or `single.php` it is a file that is private ( dev eyes only ) that allows us to communicate w/ the WP backend.
 * `add_action()` is a WP function that takes two arguments: a `hook` and a `function name`.
 * `wp_enqueue_style()` is a WP function that takes two arguments: `an alias name` ( name doesn't matter just needs to be meaningful ) and a `path to the stylesheet`.
-    * `get_stylesheet_uri()` is a WP function that returns a path string combining the current directory and style.css.
+    * The path can be a web address or local file path
 * `wp_footer()` is a WP function that allows wordpress to manage injecting scripts at the bottom of the page. 
     * It also contains the necessary JS to load the black admin bar shown when logged in. 
+* `get_theme_file_uri()` is a WP function that will return the absolute path to your theme folder, you can pass in a string argument to append onto the path.
+* `wp_enqueue_script()` is a WP function that takes four arguments, `an alias name` ( name doesn't matter just needs to be meaningful ), a `path to the script`, an `array of dependencies` ( you can pass in NULL if no dependencies are required ), a `version` as a string ( can be anything you'd like ), a `boolean` to determine whether right before the closing body tag yes || no.

@@ -51,3 +51,6 @@
     * It also contains the necessary JS to load the black admin bar shown when logged in. 
 * `get_theme_file_uri()` is a WP function that will return the absolute path to your theme folder, you can pass in a string argument to append onto the path.
 * `wp_enqueue_script()` is a WP function that takes four arguments, `an alias name` ( name doesn't matter just needs to be meaningful ), a `path to the script`, an `array of dependencies` ( you can pass in NULL if no dependencies are required ), a `version` as a string ( can be anything you'd like ), a `boolean` to determine whether right before the closing body tag yes || no.
+
+## Interior Page Template
+

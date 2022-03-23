@@ -1,11 +1,7 @@
-<?php 
-    function greet( $name, $color ) {
-        echo "<p>Hi, my name is $name and my favorite color is $color</p>";
-    }
 
-    greet( 'John', 'Green' );
-    greet( 'Jane', 'Blue' );
-?>
-
-<h1>Site Title: <?php bloginfo( 'name' ); ?></h1>
-<h2>Tag Line: <?php bloginfo( 'description' ); ?></h2>
+<?php while ( have_posts() ) {
+    the_post(); ?>
+        <h2><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h2>
+        <h3><?php the_content(); ?></h3>
+        <hr>
+<?php } ?>

@@ -15,3 +15,10 @@
 * You can add a theme thumbnail by adding the file `screenshot.png` or `screenshot.jpg`
     * Ideal dimensions are 1200 ( wide ) by 900 ( tall )
 * You can delete themes by simply deleting the folders in the `themes` directory
+
+## Functions Introduction 
+
+* You can create php functions just as you would in any normal php project 
+* `bloginfo()` is a built in WP function, you can pass in the argument `name` which will pull the site title 
+    * You can view the site title in the WP dashboard by going to `settings > general > site title`
+    * You can also pull tagline by calling `bloginfo( 'description' )`, this is based off the value at `settings > general > tagline`

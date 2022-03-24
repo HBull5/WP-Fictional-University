@@ -54,3 +54,10 @@
 
 ## Interior Page Template
 
+* `after_theme_setup` is a WP hook that is called during each page load, after the theme is initialized.
+* `add_theme_support()` is a WP function that takes one argument to add theme support features
+    * An example is the `title-tag` argument that can add the page/post name and set the page `title` element to page/post name + | your site title.
+* `site_url()` is a WP function that returns the root url of the current WP site the function is being executed at. It can be passed one argument which will automatically append it to the end or the URL.
+
+## Parent / Child Pages
+

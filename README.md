@@ -61,3 +61,10 @@
 
 ## Parent / Child Pages
 
+* When editing any page or post you can see in the query string of the url a `post id` this is identified as `post=24` for example.
+* `get_the_ID()` is a WP function that allows you to pull the current ID of the post or page.
+* `wp_get_post_parent_id()` is a WP function that takes one argument of the id of the post or page of which you want the parent's ID. 
+    * Simple dynamic use case is to call the function like this `wp_get_post_parent_id( get_the_ID() );` to get the parent ID of the current page / post.
+* `get_the_title()` is a WP function that takes one argument. That argument is the post id or post and returns that post's title. 
+* `get_the_permalink()` is a WP function that takes one argument. That argument is the post id or post and returns that post's permalink.
+    * There is also a `get_permalink()` WP function, it does the same thing, `get_the_permalink()` was added to make the naming convention of pulling data from a specified post id argument format.
